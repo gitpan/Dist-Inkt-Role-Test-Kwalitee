@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "check a distribution's kwalitee at build time",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.017, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.020, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -31,7 +31,7 @@ my $meta = {
                         test => { requires => { "Test::More" => 0.96 } },
                       },
   "provides"       => {
-                        "Dist::Inkt::Role::Test::Kwalitee" => { file => "lib/Dist/Inkt/Role/Test/Kwalitee.pm", version => 0.001 },
+                        "Dist::Inkt::Role::Test::Kwalitee" => { file => "lib/Dist/Inkt/Role/Test/Kwalitee.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,9 +40,14 @@ my $meta = {
                                         },
                         homepage     => "https://metacpan.org/release/Dist-Inkt-Role-Test-Kwalitee",
                         license      => ["http://dev.perl.org/licenses/"],
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-dist-inkt-role-test-kwalitee.git",
+                                          web  => "https://github.com/tobyink/p5-dist-inkt-role-test-kwalitee",
+                                        },
                         x_identifier => "http://purl.org/NET/cpan-uri/dist/Dist-Inkt-Role-Test-Kwalitee/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
